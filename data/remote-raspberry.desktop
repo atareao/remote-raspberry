@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Encoding=UTF-8
+Name=Remote Raspberry
+Comment=Remote Raspberry
+TryExec=/usr/bin/remote-raspberry
+Exec=/usr/bin/remote-raspberry
+Icon=remote-raspberry
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=System;Application
+X-KDE-SubstituteUID=true

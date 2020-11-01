@@ -1,0 +1,40 @@
+ubuntu-first-steps (0.1.1-20.04.06) focal; urgency=medium
+
+  * Center main window
+  * Using pkexec
+  * Close installer window after install 
+  * Add gnome-weather to packages to install
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sat, 04 Jul 2020 12:17:28 +0200
+
+ubuntu-first-steps (0.0.9-20.04.06) focal; urgency=medium
+
+  * Root in separate space
+  * add gnome-sushi to applications to install
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sun, 26 Apr 2020 07:01:09 +0200
+
+ubuntu-first-steps (0.0.8-20.04.08) focal; urgency=medium
+
+  * Change colors with Theme 
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sat, 25 Apr 2020 14:52:29 +0200
+
+ubuntu-first-steps (0.0.7-20.04.03) focal; urgency=medium
+
+  * Change name to Ubuntu First Steps 
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sat, 25 Apr 2020 10:14:24 +0200
+
+ubuntu-first-steps (0.0.6-19.04ubuntu333) disco; urgency=medium
+
+  * Added spanish translation
+  * Changed launcher
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sun, 09 Jun 2019 10:33:59 +0200
+
+ubuntu-first-steps (0.0.5-19.04ubuntu0) disco; urgency=medium
+
+  * First release
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Wed, 05 Jun 2019 07:17:12 +0200
