@@ -19,115 +19,115 @@ msgstr ""
 
 #: src/raspberry_client.py:57
 msgid "Hostname must be set"
-msgstr ""
+msgstr "Introduce el hostname"
 
 #: src/raspberry_client.py:60
 msgid "Port must be set"
-msgstr ""
+msgstr "Introduce el puerto"
 
 #: src/raspberry_client.py:63
 msgid "Username must be set"
-msgstr ""
+msgstr "Introduce el nombre de usuario"
 
 #: src/raspberry_client.py:66
 msgid "Password or keyfile must be set"
-msgstr ""
+msgstr "Selecciona contraseña o clave pública"
 
 #: src/raspberry_client.py:79
 msgid "Authentication failed"
-msgstr ""
+msgstr "Autenticación errónea"
 
 #: src/raspberry_client.py:81
 msgid "Bad authentication type"
-msgstr ""
+msgstr "Erróneo tipo de autenticación"
 
 #: src/raspberry_client.py:83
 msgid "Bad host key"
-msgstr ""
+msgstr "Clave errónea"
 
 #: src/raspberry_client.py:85
 msgid "Unknown exception"
-msgstr ""
+msgstr "Error desconocido"
 
 #: src/raspberry_memory.py:74
 msgid "RAM"
-msgstr ""
+msgstr "RAM"
 
 #: src/raspberry_memory.py:85 src/raspberry_memory.py:165
 msgid "Total"
-msgstr ""
+msgstr "Total"
 
 #: src/raspberry_memory.py:86
 msgid "The total amount of RAM installed"
-msgstr ""
+msgstr "Cantidad de RAM instalada"
 
 #: src/raspberry_memory.py:98 src/raspberry_memory.py:178
 msgid "Free"
-msgstr ""
+msgstr "Libre"
 
 #: src/raspberry_memory.py:99
 msgid "The amount of unused or free memory"
-msgstr ""
+msgstr "Cantidad de memoria sin utililzar"
 
 #: src/raspberry_memory.py:111
 msgid "Used"
-msgstr ""
+msgstr "Utilizada"
 
 #: src/raspberry_memory.py:112
 msgid "The total amount of RAM used"
-msgstr ""
+msgstr "Cantidad de memoria RAM utilizada"
 
 #: src/raspberry_memory.py:124
 msgid "Shared"
-msgstr ""
+msgstr "Compartida"
 
 #: src/raspberry_memory.py:125
 msgid "Amount of memory mostly used by tmpfs"
-msgstr ""
+msgstr "Cantidad de memoria utilizada por tmpfs"
 
 #: src/raspberry_memory.py:137
 msgid "Buff/cache"
-msgstr ""
+msgstr "Buff/cache"
 
 #: src/raspberry_memory.py:138
 msgid "Sum of buffers and cache"
-msgstr ""
+msgstr "Suma de memoria cache y en buffer"
 
 #: src/raspberry_memory.py:150
 msgid "Available"
-msgstr ""
+msgstr "Disponible"
 
 #: src/raspberry_memory.py:151
 msgid "Estimation of memory available"
-msgstr ""
+msgstr "Estimación de memoria disponible"
 
 #: src/raspberry_memory.py:154
 msgid "Swap"
-msgstr ""
+msgstr "Swap"
 
 #: src/raspberry_memory.py:166
 msgid "The total amount of swap installed"
-msgstr ""
+msgstr "Memoria de intercambio total"
 
 #: src/raspberry_memory.py:179
 msgid "The amount of unused or free swap"
-msgstr ""
+msgstr "Memoria de intercambio libre"
 
 #: src/raspberry_memory.py:191
 msgid "Cached"
-msgstr ""
+msgstr "Caché"
 
 #: src/raspberry_memory.py:192
 msgid "The amount of swap cached"
-msgstr ""
+msgstr "Total de memoria de intercambio cacheada"
 
 #: src/raspberry_memory.py:204
 msgid "used"
-msgstr ""
+msgstr "utilizada"
 
 #: src/raspberry_memory.py:205
 msgid "The amount of swap used"
-msgstr ""
+msgstr "Cantidad de memoria de intercambio utilizada"
 
 #: src/raspberry_memory.py:220 src/raspberry_memory.py:224
 #: src/raspberry_memory.py:234 src/raspberry_memory.py:239
@@ -135,149 +135,149 @@ msgstr ""
 #: src/raspberry_memory.py:253 src/raspberry_memory.py:257
 #: src/raspberry_memory.py:262 src/raspberry_memory.py:266
 msgid "MB"
-msgstr ""
+msgstr "MB"
 
 #: src/configure_connection.py:73 src/mainwindow.py:99
 msgid "Configure connection"
-msgstr ""
+msgstr "Configura la conexión"
 
 #: src/configure_connection.py:83
 msgid "Hostname"
-msgstr ""
+msgstr "Hostname"
 
 #: src/configure_connection.py:84
 msgid "Set the hostname or IP"
-msgstr ""
+msgstr "Introduce el hostname o la IP"
 
 #: src/configure_connection.py:89
 msgid "Port"
-msgstr ""
+msgstr "Puerto"
 
 #: src/configure_connection.py:90
 msgid "Set the port"
-msgstr ""
+msgstr "Introduce el puerto"
 
 #: src/configure_connection.py:95
 msgid "User name"
-msgstr ""
+msgstr "Nombre de usuario"
 
 #: src/configure_connection.py:96
 msgid "Set the user name."
-msgstr ""
+msgstr "Introduce el nombre de usuario"
 
 #: src/configure_connection.py:99
 msgid "Credentials"
-msgstr ""
+msgstr "Credenciales"
 
 #: src/configure_connection.py:112
 msgid "Select credentials by password or key file"
-msgstr ""
+msgstr "Selecciona credenciales por contraseña o clave"
 
 #: src/configure_connection.py:113
 msgid "If switch is on credentials by password"
-msgstr ""
+msgstr "Si el interruptor está es por contraseña"
 
 #: src/configure_connection.py:121
 msgid "Password"
-msgstr ""
+msgstr "Contraseña"
 
 #: src/configure_connection.py:122
 msgid "Set the user password"
-msgstr ""
+msgstr "Introduce la contraseña"
 
 #: src/configure_connection.py:129
 msgid "Select keyfile"
-msgstr ""
+msgstr "Selecciona el archivo de clave"
 
 #: src/configure_connection.py:133
 msgid "*.pub files"
-msgstr ""
+msgstr "archivos *.pub"
 
 #: src/configure_connection.py:137
 msgid "keyfile"
-msgstr ""
+msgstr "archivo de clave"
 
 #: src/configure_connection.py:138
 msgid "Set the keyfile"
-msgstr ""
+msgstr "Introduce el archivo de clave"
 
 #: src/configure_connection.py:141 src/configure_connection.py:152
 msgid "Test connection"
-msgstr ""
+msgstr "Prueba la conexión"
 
 #: src/configure_connection.py:149 src/configure_connection.py:216
 msgid "Unknown"
-msgstr ""
+msgstr "Desconocido"
 
 #: src/configure_connection.py:153
 msgid "Results can be: Unknown, OK or KO"
-msgstr ""
+msgstr "El resultado puede ser: Desconocido, OK o KO"
 
 #: src/configure_connection.py:179 src/configure_connection.py:193
 msgid "Raspberry Connection"
-msgstr ""
+msgstr "Conexión Raspberry"
 
 #: src/configure_connection.py:180 src/configure_connection.py:194
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #: src/configure_connection.py:182 src/configure_connection.py:214
 #: src/configure_connection.py:227
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: src/configure_connection.py:185 src/configure_connection.py:190
 msgid "KO"
-msgstr ""
+msgstr "KO"
 
 #: src/application.py:55
 msgid "remote-raspberry"
-msgstr ""
+msgstr "remote-raspberry"
 
 #: src/application.py:151
 msgid "Remote Raspberry"
-msgstr ""
+msgstr "Raspberry Remota"
 
 #: src/mainwindow.py:103
 msgid "Raspberry Memory"
-msgstr ""
+msgstr "Memoria de la Rasbperry"
 
 #: src/mainwindow.py:158
 msgid "Update Rasbperry info"
-msgstr ""
+msgstr "Actualizar la información"
 
 #: src/mainwindow.py:167
 msgid "Homepage"
-msgstr ""
+msgstr "Página web"
 
 #: src/mainwindow.py:172
 msgid "Code"
-msgstr ""
+msgstr "Código"
 
 #: src/mainwindow.py:173
 msgid "Issues"
-msgstr ""
+msgstr "Problemas"
 
 #: src/mainwindow.py:178
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 #: src/mainwindow.py:179
 msgid "GitHub"
-msgstr ""
+msgstr "GitHub"
 
 #: src/mainwindow.py:184
 msgid "Donations"
-msgstr ""
+msgstr "Donaciones"
 
 #: src/mainwindow.py:189
 msgid "About"
-msgstr ""
+msgstr "Acerca"
 
 #: src/mainwindow.py:194
 msgid "Quit"
-msgstr ""
+msgstr "Salir"
 
 #: src/mainwindow.py:199
 msgid "Help"
-msgstr ""
+msgstr "Ayuda"
