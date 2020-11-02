@@ -207,6 +207,7 @@ class ConfigureConnection(Gtk.Overlay):
         self.port.set_text(configuration.get('port'))
         self.username.set_text(configuration.get('username'))
         self.password.set_text(configuration.get('password'))
+        self.keyfile.set_filename(configuration.get('keyfilename'))
         self.connection_option.set_state(
             configuration.get('credentials_by_password'))
         if configuration.get('checked_connection'):
@@ -220,6 +221,7 @@ class ConfigureConnection(Gtk.Overlay):
         configuration.set('port', self.port.get_text())
         configuration.set('username', self.username.get_text())
         configuration.set('password', self.password.get_text())
+        configuration.set('keyfilename', self.keyfile.get_filename())
         configuration.set('credentials_by_password',
             self.connection_option.get_state())
         if self.test_connection.get_label() == _('OK'):

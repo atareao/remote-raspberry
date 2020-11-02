@@ -52,7 +52,7 @@ from utils import variant_to_value, CSS
 from configurator import Configuration
 from settings import SettingRow
 from configure_connection import ConfigureConnection
-from raspberry_info import RaspberryInfo
+from raspberry_memory import RaspberryMemory
 from string import Template
 
 
@@ -100,8 +100,8 @@ class MainWindow(Gtk.ApplicationWindow):
                              'preferences-desktop-remote-desktop-symbolic')
         sidebar.add(option1)
 
-        self.option2 = SideWidget(_('Raspberry information'),
-                                  'dialog-information-symbolic')
+        self.option2 = SideWidget(_('Raspberry Memory'),
+                                  'drive-harddisk-solidstate-symbolic')
         sidebar.add(self.option2)
 
         self.stack = Gtk.Stack()
@@ -112,9 +112,9 @@ class MainWindow(Gtk.ApplicationWindow):
         self.stack.add_named(self.configureConnection, 'configureConnection')
         option1.set_stack('configureConnection')
 
-        self.raspberryInfo = RaspberryInfo(self)
-        self.stack.add_named(self.raspberryInfo, 'raspberryInfo')
-        self.option2.set_stack('raspberryInfo')
+        self.raspberryMemory = RaspberryMemory(self)
+        self.stack.add_named(self.raspberryMemory, 'raspberryMemory')
+        self.option2.set_stack('raspberryMemory')
 
         self.load_css()
         self.set_size_request(800, 900)

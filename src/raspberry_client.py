@@ -25,6 +25,8 @@
 
 import paramiko
 from comun import _
+from configurator import Configuration
+
 
 class RaspberryClient():
     def __init__(self, hostname, port, username, password=None, keyfile=None):
@@ -36,6 +38,19 @@ class RaspberryClient():
         self._connected = False
         self._client = paramiko.SSHClient()
         self._client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+
+    @classmethod
+    def fromConfiguration(cls):
+        configuration = Configuration()
+        hostname = configuration.get('hostname')
+        port = configuration.get('port')
+        username = configuration.get('username')
+        password = configuration.get('password')
+        by_password = configuration.get('credentials_by_password')
+        keyfilename = configuration.get('keyfilename')
+        if by_password:
+            return RaspberryClient(hostname, port, username, password)
+        return RaspberryClient(hostname, port, username, keyfile=keyfilename)
 
     def connect(self):
         if not self._hostname:
@@ -81,9 +96,7 @@ class RaspberryClient():
             sftp_client = self._client.open_sftp()
             remote_file = sftp_client.open(remote_filename)
             for line in remote_file:
-                string_builder += line + '\n'
-            if string_builder.endswith('\n'):
-                string_builder = string_builder[:-1]
+                string_builder += line
         except Exception as exception:
             print(exception)
         finally:

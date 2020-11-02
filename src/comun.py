@@ -41,6 +41,7 @@ PARAMS = {'hostname': '',
           'port': '22',
           'username': 'pi',
           'password': 'raspberry',
+          'keyfilename': '',
           'credentials_by_password': True,
           'checked_connection': False}
 
