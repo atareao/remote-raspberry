@@ -139,36 +139,7 @@ class MainWindow(Gtk.ApplicationWindow):
         self.stack.set_visible_child_name(sidewidget.get_stack())
 
     def on_apply_clicked(self, *args):
-        self.tweakDock.set_selected()
-        self.tweakDesktop.set_selected()
-
-        self.tweakDock.update()
-        self.tweakDesktop.update()
-
-        ppas_to_install, ppas_to_remove = self.tweakRepositories.set_selected()
-        priv_to_install, priv_to_remove = \
-            self.tweakPrivacy.set_selected_packages()
-        print(priv_to_remove)
-        apps_to_install, apps_to_remove = self.tweakPackages.set_selected()
-        apps_to_install = apps_to_install + priv_to_install
-        apps_to_remove = apps_to_remove + priv_to_remove
-        print(apps_to_remove)
-        actions = len(ppas_to_install) + len(ppas_to_remove) + \
-            len(apps_to_install) + len(apps_to_remove)
-        if actions > 0:
-            actions = {'ppas_to_install': ppas_to_install,
-                       'ppas_to_remove': ppas_to_remove,
-                       'apps_to_install': apps_to_install,
-                       'apps_to_remove': apps_to_remove
-            }
-            process = subprocess.Popen(['pkexec',
-                                        'ubuntu-first-steps-installer',
-                                        json.dumps(actions)])
-            outs, errs = process.communicate()
-            self.tweakRepositories.update()
-            self.tweakPackages.update()
-        self.tweakPrivacy.set_selected()
-        self.tweakPrivacy.update()
+        self.raspberryMemory.update()
 
     def init_headerbar(self):
         self.control = {}
@@ -184,7 +155,7 @@ class MainWindow(Gtk.ApplicationWindow):
 
         self.control['apply'] = Gtk.Button()
         self.control['apply'].connect('clicked', self.on_apply_clicked)
-        self.control['apply'].set_tooltip_text(_('Apply changes'))
+        self.control['apply'].set_tooltip_text(_('Update Rasbperry info'))
         self.control['apply'].add(Gtk.Image.new_from_gicon(Gio.ThemedIcon(
             name='preferences-system-symbolic'), Gtk.IconSize.BUTTON))
         self.apply_controls.pack_start(self.control['apply'],

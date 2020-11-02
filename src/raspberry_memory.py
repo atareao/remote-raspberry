@@ -159,8 +159,56 @@ class RaspberryMemory(Gtk.Overlay):
         listbox1 = Gtk.ListBox()
         box.add(listbox1)
 
+        self.swap_total = Gtk.Label()
+        self.swap_total.set_valign(Gtk.Align.CENTER)
+        self.swap_total.set_width_chars(20)
+        listbox1.add(SettingRow(_('Total'),
+                                _('The total amount of swap installed'),
+                                self.swap_total))
+
+        swap_free_box = Gtk.Box.new(Gtk.Orientation.VERTICAL, 5)
+        self.swap_free = Gtk.Label()
+        self.swap_free.set_width_chars(20)
+        self.swap_free.set_valign(Gtk.Align.CENTER)
+        swap_free_box.add(self.swap_free)
+        self.swap_free_progress = Gtk.LevelBar()
+        self.swap_free_progress.set_min_value(0)
+        self.swap_free_progress.set_max_value(1)
+        swap_free_box.add(self.swap_free_progress)
+        listbox1.add(SettingRow(_('Free'),
+                                _('The amount of unused or free swap'),
+                                swap_free_box))
+
+        swap_cached_box = Gtk.Box.new(Gtk.Orientation.VERTICAL, 5)
+        self.swap_cached = Gtk.Label()
+        self.swap_cached.set_width_chars(20)
+        self.swap_cached.set_valign(Gtk.Align.CENTER)
+        swap_cached_box.add(self.swap_cached)
+        self.swap_cached_progress = Gtk.LevelBar()
+        self.swap_cached_progress.set_min_value(0)
+        self.swap_cached_progress.set_max_value(1)
+        swap_cached_box.add(self.swap_cached_progress)
+        listbox1.add(SettingRow(_('Cached'),
+                                _('The amount of swap cached'),
+                                swap_cached_box))
+
+        swap_used_box = Gtk.Box.new(Gtk.Orientation.VERTICAL, 5)
+        self.swap_used = Gtk.Label()
+        self.swap_used.set_width_chars(20)
+        self.swap_used.set_valign(Gtk.Align.CENTER)
+        swap_used_box.add(self.swap_used)
+        self.swap_used_progress = Gtk.LevelBar()
+        self.swap_used_progress.set_min_value(0)
+        self.swap_used_progress.set_max_value(1)
+        swap_used_box.add(self.swap_used_progress)
+        listbox1.add(SettingRow(_('used'),
+                                _('The amount of swap used'),
+                                swap_used_box))
 
         self.raspberryClient = RaspberryClient.fromConfiguration()
+        self.load_information()
+
+    def update(self):
         self.load_information()
 
     def load_information(self):
@@ -186,7 +234,6 @@ class RaspberryMemory(Gtk.Overlay):
         self.ram_used.set_text(str(int(memused)) + ' ' + _('MB'))
         self.ram_used_progress.set_value(memused/memtotal)
 
-
         memshared = re.findall(r'Shmem:\s*(\d*)', meminfo)
         memshared = float(memshared[0])/1024.0 if memshared else 0.0
         self.ram_shared.set_text(str(int(memshared)) + ' ' + _('MB'))
@@ -201,5 +248,21 @@ class RaspberryMemory(Gtk.Overlay):
         self.ram_available.set_text(str(int(memavailable)) + ' ' + _('MB'))
         self.ram_available_progress.set_value(memavailable/memtotal)
 
-        print(memtotal)
+        swaptotal = re.findall(r'SwapTotal:\s*(\d*)', meminfo)
+        swaptotal = float(swaptotal[0])/1024.0 if swaptotal else 0.0
+        self.swap_total.set_text(str(int(swaptotal)) + ' ' + _('MB'))
+
+        swapfree = re.findall(r'SwapFree:\s*(\d*)', meminfo)
+        swapfree = float(swapfree[0])/1024.0 if swapfree else 0.0
+        self.swap_free.set_text(str(int(swapfree)) + ' ' + _('MB'))
+        self.swap_free_progress.set_value(swapfree/swaptotal)
+
+        swapcached = re.findall(r'SwapCached:\s*(\d*)', meminfo)
+        swapcached = float(swapcached[0])/1024.0 if swapcached else 0.0
+        self.swap_cached.set_text(str(int(swapcached)) + ' ' + _('MB'))
+        self.swap_cached_progress.set_value(swapcached/swaptotal)
+
+        swapused = swaptotal - (swapfree + swapcached)
+        self.swap_used.set_text(str(int(swapused)) + ' ' + _('MB'))
+        self.swap_used_progress.set_value(swapused/swaptotal)
 
