@@ -1,0 +1,283 @@
+# Spanish translations for remote-raspberry package.
+# Copyright (C) 2020 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the remote-raspberry package.
+# Lorenzo <atareao@atareao.es>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: remote-raspberry - 0.1.0-20.04.00\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-02 07:43+0100\n"
+"PO-Revision-Date: 2020-11-02 07:43+0100\n"
+"Last-Translator: Lorenzo <atareao@atareao.es>\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/raspberry_client.py:57
+msgid "Hostname must be set"
+msgstr ""
+
+#: src/raspberry_client.py:60
+msgid "Port must be set"
+msgstr ""
+
+#: src/raspberry_client.py:63
+msgid "Username must be set"
+msgstr ""
+
+#: src/raspberry_client.py:66
+msgid "Password or keyfile must be set"
+msgstr ""
+
+#: src/raspberry_client.py:79
+msgid "Authentication failed"
+msgstr ""
+
+#: src/raspberry_client.py:81
+msgid "Bad authentication type"
+msgstr ""
+
+#: src/raspberry_client.py:83
+msgid "Bad host key"
+msgstr ""
+
+#: src/raspberry_client.py:85
+msgid "Unknown exception"
+msgstr ""
+
+#: src/raspberry_memory.py:74
+msgid "RAM"
+msgstr ""
+
+#: src/raspberry_memory.py:85 src/raspberry_memory.py:165
+msgid "Total"
+msgstr ""
+
+#: src/raspberry_memory.py:86
+msgid "The total amount of RAM installed"
+msgstr ""
+
+#: src/raspberry_memory.py:98 src/raspberry_memory.py:178
+msgid "Free"
+msgstr ""
+
+#: src/raspberry_memory.py:99
+msgid "The amount of unused or free memory"
+msgstr ""
+
+#: src/raspberry_memory.py:111
+msgid "Used"
+msgstr ""
+
+#: src/raspberry_memory.py:112
+msgid "The total amount of RAM used"
+msgstr ""
+
+#: src/raspberry_memory.py:124
+msgid "Shared"
+msgstr ""
+
+#: src/raspberry_memory.py:125
+msgid "Amount of memory mostly used by tmpfs"
+msgstr ""
+
+#: src/raspberry_memory.py:137
+msgid "Buff/cache"
+msgstr ""
+
+#: src/raspberry_memory.py:138
+msgid "Sum of buffers and cache"
+msgstr ""
+
+#: src/raspberry_memory.py:150
+msgid "Available"
+msgstr ""
+
+#: src/raspberry_memory.py:151
+msgid "Estimation of memory available"
+msgstr ""
+
+#: src/raspberry_memory.py:154
+msgid "Swap"
+msgstr ""
+
+#: src/raspberry_memory.py:166
+msgid "The total amount of swap installed"
+msgstr ""
+
+#: src/raspberry_memory.py:179
+msgid "The amount of unused or free swap"
+msgstr ""
+
+#: src/raspberry_memory.py:191
+msgid "Cached"
+msgstr ""
+
+#: src/raspberry_memory.py:192
+msgid "The amount of swap cached"
+msgstr ""
+
+#: src/raspberry_memory.py:204
+msgid "used"
+msgstr ""
+
+#: src/raspberry_memory.py:205
+msgid "The amount of swap used"
+msgstr ""
+
+#: src/raspberry_memory.py:220 src/raspberry_memory.py:224
+#: src/raspberry_memory.py:234 src/raspberry_memory.py:239
+#: src/raspberry_memory.py:243 src/raspberry_memory.py:248
+#: src/raspberry_memory.py:253 src/raspberry_memory.py:257
+#: src/raspberry_memory.py:262 src/raspberry_memory.py:266
+msgid "MB"
+msgstr ""
+
+#: src/configure_connection.py:73 src/mainwindow.py:99
+msgid "Configure connection"
+msgstr ""
+
+#: src/configure_connection.py:83
+msgid "Hostname"
+msgstr ""
+
+#: src/configure_connection.py:84
+msgid "Set the hostname or IP"
+msgstr ""
+
+#: src/configure_connection.py:89
+msgid "Port"
+msgstr ""
+
+#: src/configure_connection.py:90
+msgid "Set the port"
+msgstr ""
+
+#: src/configure_connection.py:95
+msgid "User name"
+msgstr ""
+
+#: src/configure_connection.py:96
+msgid "Set the user name."
+msgstr ""
+
+#: src/configure_connection.py:99
+msgid "Credentials"
+msgstr ""
+
+#: src/configure_connection.py:112
+msgid "Select credentials by password or key file"
+msgstr ""
+
+#: src/configure_connection.py:113
+msgid "If switch is on credentials by password"
+msgstr ""
+
+#: src/configure_connection.py:121
+msgid "Password"
+msgstr ""
+
+#: src/configure_connection.py:122
+msgid "Set the user password"
+msgstr ""
+
+#: src/configure_connection.py:129
+msgid "Select keyfile"
+msgstr ""
+
+#: src/configure_connection.py:133
+msgid "*.pub files"
+msgstr ""
+
+#: src/configure_connection.py:137
+msgid "keyfile"
+msgstr ""
+
+#: src/configure_connection.py:138
+msgid "Set the keyfile"
+msgstr ""
+
+#: src/configure_connection.py:141 src/configure_connection.py:152
+msgid "Test connection"
+msgstr ""
+
+#: src/configure_connection.py:149 src/configure_connection.py:216
+msgid "Unknown"
+msgstr ""
+
+#: src/configure_connection.py:153
+msgid "Results can be: Unknown, OK or KO"
+msgstr ""
+
+#: src/configure_connection.py:179 src/configure_connection.py:193
+msgid "Raspberry Connection"
+msgstr ""
+
+#: src/configure_connection.py:180 src/configure_connection.py:194
+msgid "Ok"
+msgstr ""
+
+#: src/configure_connection.py:182 src/configure_connection.py:214
+#: src/configure_connection.py:227
+msgid "OK"
+msgstr ""
+
+#: src/configure_connection.py:185 src/configure_connection.py:190
+msgid "KO"
+msgstr ""
+
+#: src/application.py:55
+msgid "remote-raspberry"
+msgstr ""
+
+#: src/application.py:151
+msgid "Remote Raspberry"
+msgstr ""
+
+#: src/mainwindow.py:103
+msgid "Raspberry Memory"
+msgstr ""
+
+#: src/mainwindow.py:158
+msgid "Update Rasbperry info"
+msgstr ""
+
+#: src/mainwindow.py:167
+msgid "Homepage"
+msgstr ""
+
+#: src/mainwindow.py:172
+msgid "Code"
+msgstr ""
+
+#: src/mainwindow.py:173
+msgid "Issues"
+msgstr ""
+
+#: src/mainwindow.py:178
+msgid "Twitter"
+msgstr ""
+
+#: src/mainwindow.py:179
+msgid "GitHub"
+msgstr ""
+
+#: src/mainwindow.py:184
+msgid "Donations"
+msgstr ""
+
+#: src/mainwindow.py:189
+msgid "About"
+msgstr ""
+
+#: src/mainwindow.py:194
+msgid "Quit"
+msgstr ""
+
+#: src/mainwindow.py:199
+msgid "Help"
+msgstr ""

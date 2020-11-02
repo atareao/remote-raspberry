@@ -72,47 +72,13 @@ sudo apt install remote-raspberry
 <!-- start using -->
 ## Using <span id="project_title">Remote Raspberry</span>
 
-When you start **<span id="project_title">Remote Raspberry</span>** it goes to Indicator Area, as you can see in the next screenshot,
+When you start **<span id="project_title">Remote Raspberry</span>** you must provide information about your Raspberry SSH connection
 
-![tasker](./screenshots/screenshot_01.png)
+![Main window](./screenshots/screenshot_01.png)
 
-In this screenshot, the language is Spanish, but, if there is no translation for your language, you will find the app in English.
+In the Memory Tab you can get information about your remote Raspberry Pi RAM and SWAP usage.
 
-You can set some options in order to start *Tasker* when you start your Operative System.
-
-* Set the icon theme. Dark or light.
-* Start Tasker with your Operative System
-* Set the number of tasks you want to show in the indicator menu
-* Set the tasks files. The file must follow the Todo.txt syntax.
-
-![Example 2](./screenshots/screenshot_06.png)
-
-You can add so many projects as you need in the configuration dialog, as you can see in the next screenshot.
-
-![Example 2](./screenshots/screenshot_07.png)
-
-Same, for contexts.
-
-![Example 2](./screenshots/screenshot_08.png)
-
-You can add optional tags. Every tag can be or a string or a date. So you can add a *due* tag to set the date when the task must be completed or an *id* to save an special
-
-
-![Example 2](./screenshots/screenshot_09.png)
-
-Besides you can set the colors of the graphics
-
-![Configuration](./screenshots/screenshot_02.png)
-
-In the next screenshot you can see the about
-
-![About](./screenshots/screenshot_03.png)
-
-In the next screenshots you can see some samples of my use of *tasker*,
-
-![Example 1](./screenshots/screenshot_04.png)
-
-![Example 2](./screenshots/screenshot_05.png)
+![Memory information](./screenshots/screenshot_02.png)
 
 
 <!-- end using -->
