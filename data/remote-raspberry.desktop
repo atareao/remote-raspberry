@@ -3,7 +3,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Remote Raspberry
-Comment=Remote Raspberry
+Comment=Manage a Raspberry Pi from Linux
 TryExec=/usr/bin/remote-raspberry
 Exec=/usr/bin/remote-raspberry
 Icon=remote-raspberry
