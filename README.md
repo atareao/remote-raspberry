@@ -31,6 +31,7 @@ codefactor-badge: True
 </p>
 <h2>🏠 <a href="https://www.atareao.es/aplicacion/remote-raspberry" id="homepage">Homepage</a></h2>
 <p><span id="project_title">Remote Raspberry</span> is an application to manage your Raspberry Pi remotely</p>
+
 <!-- end description -->
 
 <!-- start prerequisites -->
@@ -50,6 +51,7 @@ gir1.2-keybinder-3.0
 ```
 
 
+
 <!-- end prerequisites -->
 
 <!-- start installing -->
@@ -67,6 +69,7 @@ sudo apt install remote-raspberry
 
 
 
+
 <!-- end installing -->
 
 <!-- start using -->
@@ -79,6 +82,7 @@ When you start **<span id="project_title">Remote Raspberry</span>** you must pro
 In the Memory Tab you can get information about your remote Raspberry Pi RAM and SWAP usage.
 
 ![Memory information](./screenshots/screenshot_02.png)
+
 
 
 <!-- end using -->
@@ -97,12 +101,14 @@ To contribute to **<span id="project_title">Remote Raspberry</span>**, follow th
 Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 </commit_message></branch_name>
 
+
 <!-- end contributing -->
 
 <!-- start contributors -->
 ## 👤 Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
 
 
 <!-- end contributors -->
@@ -116,6 +122,16 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 				<img src="https://avatars3.githubusercontent.com/u/298055?v=4" width="100px"/>
 			</a>
 		</td>
+		<td id="freddii" align="center">
+			<a href="https://github.com/freddii">
+				<img src="https://avatars.githubusercontent.com/u/7213207?v=4" width="100px"/>
+			</a>
+		</td>
+		<td id="jmmanzano" align="center">
+			<a href="https://github.com/jmmanzano">
+				<img src="https://avatars.githubusercontent.com/u/20474411?v=4" width="100px"/>
+			</a>
+		</td>
 	</tr>
 	<tr id="info_name">
 		<td id="atareao" align="center">
@@ -123,11 +139,31 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 				<strong>Lorenzo Carbonell</strong>
 			</a>
 		</td>
+		<td id="freddii" align="center">
+			<a href="https://github.com/freddii">
+				<strong>freddii</strong>
+			</a>
+		</td>
+		<td id="jmmanzano" align="center">
+			<a href="https://github.com/jmmanzano">
+				<strong>jmmanzano</strong>
+			</a>
+		</td>
 	</tr>
 	<tr id="info_commit">
 		<td id="atareao" align="center">
 			<a href="/commits?author=atareao">
 				<span id="role">💻</span>
+			</a>
+		</td>
+		<td id="freddii" align="center">
+			<a href="/commits?author=freddii">
+				<span id="role">🌍</span>
+			</a>
+		</td>
+		<td id="jmmanzano" align="center">
+			<a href="/commits?author=jmmanzano">
+				<span id="role">🐛</span>
 			</a>
 		</td>
 	</tr>
