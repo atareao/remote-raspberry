@@ -212,7 +212,11 @@ class RaspberryMemory(Gtk.Overlay):
         self.load_information()
 
     def load_information(self):
-        self.raspberryClient.connect()
+        try:
+            self.raspberryClient.connect()
+        except Exception as exception:
+            print(exception)
+            return
         meminfo = self.raspberryClient.read_file('/proc/meminfo')
 
         memtotal = re.findall(r'MemTotal:\s*(\d*)', meminfo)

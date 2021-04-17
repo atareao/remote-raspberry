@@ -1,6 +1,12 @@
+remote-raspberry (0.1.0-20.04.01) focal; urgency=medium
+
+  * Fixed bug and dependency
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sat, 17 Apr 2021 21:34:42 +0200
+
 remote-raspberry (0.1.0-20.04.00) focal; urgency=medium
 
   * Add SSH Connection
   * Add RAM and SWAP information
 
- -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Mon, 02 Nov 2020 07:37:55 +0100
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sat, 17 Apr 2021 21:34:33 +0200
