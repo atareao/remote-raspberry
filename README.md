@@ -55,7 +55,7 @@ gir1.2-keybinder-3.0
 <!-- end prerequisites -->
 
 <!-- start installing -->
-## Installing <span id="project_title">Remote Raspberry</span>
+## Installing <span id="project_title">Remote Raspberry</span> from PPA
 
 To install <span id="project_title">Remote Raspberry</span>, follow these steps:
 
@@ -68,7 +68,17 @@ sudo apt install remote-raspberry
 ```
 
 
+## Build it from source and install it after that
 
+```sh
+git clone https://github.com/atareao/remote-raspberry
+cd remote-raspberry
+rm ./debian/source/format
+dpkg-buildpackage
+cd ..
+sudo dpkg -i remote-raspberry_*_all.deb
+sudo apt-get install -f -y
+```
 
 <!-- end installing -->
 
